@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha Social - Mini Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌐 Alpha Social</h1>
+    <div class="profile-info">
+        <span id="username-display"></span>
+        <button onclick="toggleFollow()">Follow</button>
+        <span id="followers-count"></span>
+    </div>
+</header>
+
+<main>
+
+    <!-- Create Post -->
+    <div class="create-post">
+        <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+        <button onclick="createPost()">Post</button>
+    </div>
+
+    <!-- Posts -->
+    <div id="posts-container"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
